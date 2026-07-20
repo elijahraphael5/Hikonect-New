@@ -289,7 +289,7 @@ const GlobalStyles = () => (
     }
     .socials > .socialText { width: 79%; max-width: 680px; }
     .socials > .socialImage { width: 68%; display: flex; align-items: center; justify-content: center; position: relative; }
-    .socials > .socialImage > img { width: 100%; max-width: 800px; height: auto; }
+    .socials > .socialImage > img { width: 100%; max-width: 1200px; height: auto; }
     .socials > .socialImage > img:nth-child(2) {
       width: 100%; max-width: 120px; position: absolute; top: 20%; left: 16%;
       transform: rotate(19deg);
