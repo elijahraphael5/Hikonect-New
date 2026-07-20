@@ -152,7 +152,7 @@ const GlobalStyles = () => (
       .socials > .socialImage > img:nth-child(3) { display: none; }
       .socialText > h1 { font-size: clamp(1.4rem, 5vw, 1.8rem); }
       .socialText > p { font-size: 0.92rem; max-width: 100%; }
-      .specialKeys { flex-wrap: wrap; gap: 10px; }
+      .specialKeys { gap: 10px; }
       .btnPersonal, .btnBusiness, .btnEnterprise { padding: 8px 20px; font-size: 0.82rem; }
 
       /* ── Original services ── */
@@ -287,7 +287,7 @@ const GlobalStyles = () => (
       display: flex; align-items: center; justify-content: center;
       gap: 40px; padding: 80px 40px;
     }
-    .socials > .socialText { width: 63%; max-width: 640px; }
+    .socials > .socialText { width: 79%; max-width: 680px; }
     .socials > .socialImage { width: 45%; display: flex; align-items: center; justify-content: center; position: relative; }
     .socials > .socialImage > img { width: 100%; max-width: 800px; height: auto; }
     .socials > .socialImage > img:nth-child(2) {
@@ -308,7 +308,7 @@ const GlobalStyles = () => (
     .socialText > h1 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: #fff; line-height: 1.2; text-align: left; font-weight: 700; letter-spacing: -0.02em; }
     .socialText > h1 > span { color: rgb(255, 136, 0); }
     .socialText > p { font-size: 1.05rem; line-height: 1.8; color: rgba(255,255,255,0.7); margin-top: 16px; max-width: 480px; }
-    .specialKeys { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+    .specialKeys { display: flex; gap: 12px; margin-top: 28px; }
     .btnPersonal, .btnBusiness, .btnEnterprise {
       border: 1px solid #e8e2ff; padding: 10px 30px; border-radius: 20px;
     }
