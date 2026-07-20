@@ -287,7 +287,7 @@ const GlobalStyles = () => (
       display: flex; align-items: center; justify-content: center;
       gap: 40px; padding: 80px 40px;
     }
-    .socials > .socialText { width: 45%; max-width: 540px; }
+    .socials > .socialText { width: 63%; max-width: 640px; }
     .socials > .socialImage { width: 45%; display: flex; align-items: center; justify-content: center; position: relative; }
     .socials > .socialImage > img { width: 100%; max-width: 800px; height: auto; }
     .socials > .socialImage > img:nth-child(2) {
