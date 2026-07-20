@@ -146,12 +146,13 @@ const GlobalStyles = () => (
       /* ── Original socials ── */
       .socials { flex-direction: column; padding: 40px 20px; gap: 28px; }
       .socials > .socialText { width: 100%; max-width: 100%; }
-      .socials > .socialImage { width: 100%; }
+      .socials > .socialImage { width: 80%; max-width: 320px; margin: 0 auto; }
       .socials > .socialImage > img:first-child { max-width: 100%; }
       .socials > .socialImage > img:nth-child(2),
-      .socials > .socialImage > img:nth-child(3) { max-width: 70px; }
+      .socials > .socialImage > img:nth-child(3) { display: none; }
       .socialText > h1 { font-size: clamp(1.4rem, 5vw, 1.8rem); }
       .socialText > p { font-size: 0.92rem; max-width: 100%; }
+      .specialKeys { justify-content: center; }
       .specialKeys { flex-wrap: wrap; gap: 10px; }
       .btnPersonal, .btnBusiness, .btnEnterprise { padding: 8px 20px; font-size: 0.82rem; }
 
@@ -187,6 +188,7 @@ const GlobalStyles = () => (
 
       /* ── Original socials ── */
       .socials { padding: 28px 14px; gap: 20px; }
+      .socials > .socialImage { width: 90%; max-width: 240px; }
       .socialText > h1 { font-size: clamp(1.2rem, 5vw, 1.5rem); }
       .socialText > p { font-size: 0.85rem; }
       .specialKeys { gap: 8px; }
