@@ -113,12 +113,15 @@ const GlobalStyles = () => (
       .navbar img { width: 100px; }
       .navbar .links {
         display: none; width: 100%; flex-direction: column; gap: 0;
-        padding: 0; margin-top: 16px; border-top: 1px solid rgba(255,255,255,0.1);
+        padding: 0 0 20px; margin-top: 16px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        background: #050818; position: absolute; top: 100%; left: 0; z-index: 100;
       }
       .navbar .links.mobile-open { display: flex; }
-      .navbar .links a { padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 1rem; }
-      .mobile-only { display: flex; }
+      .navbar .links a { padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 1rem; text-decoration: none; }
+      .mobile-only { display: flex; padding: 0 20px; }
       .mobile-only .login-button { width: 100%; margin-top: 10px; padding: 12px; text-align: center; border-radius: 12px; }
+      .hamburger { z-index: 101; }
     }
     @media (min-width: 769px) {
       .hide-desktop { display: none !important; }
@@ -222,9 +225,10 @@ const GlobalStyles = () => (
       padding: 20px;
       margin: 0 auto;
       max-width: 1800px;
+      position: relative;
     }
     .navbar img { width: 150px; height: auto; }
-    .navbar > .links { display: flex; gap: 15px; padding-top: 10px; }
+    .navbar .links { display: flex; gap: 15px; padding-top: 10px; }
     .navbar > .links > a { text-decoration: none; color: #e0e0e0; }
     .navbar > .buttons .login-button {
       padding: 8px 16px;
