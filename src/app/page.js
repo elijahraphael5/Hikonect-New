@@ -149,7 +149,7 @@ const GlobalStyles = () => (
       .socials > .socialImage { width: 80%; max-width: 320px; margin: 0 auto; }
       .socials > .socialImage > img:first-child { max-width: 100%; }
       .socials > .socialImage > img:nth-child(2),
-      .socials > .socialImage > img:nth-child(3) { display: none; }
+      .socials > .socialImage > img:nth-child(3) { max-width: 60px; }
       .socialText > h1 { font-size: clamp(1.4rem, 5vw, 1.8rem); }
       .socialText > p { font-size: 0.92rem; max-width: 100%; }
       .specialKeys { gap: 10px; }
@@ -288,7 +288,7 @@ const GlobalStyles = () => (
       gap: 40px; padding: 80px 40px;
     }
     .socials > .socialText { width: 79%; max-width: 680px; }
-    .socials > .socialImage { width: 45%; display: flex; align-items: center; justify-content: center; position: relative; }
+    .socials > .socialImage { width: 68%; display: flex; align-items: center; justify-content: center; position: relative; }
     .socials > .socialImage > img { width: 100%; max-width: 800px; height: auto; }
     .socials > .socialImage > img:nth-child(2) {
       width: 100%; max-width: 120px; position: absolute; top: 20%; left: 16%;
