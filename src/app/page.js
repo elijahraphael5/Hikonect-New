@@ -144,14 +144,14 @@ const GlobalStyles = () => (
       .scroll > img:nth-child(7) { max-width: 80px; }
 
       /* ── Original socials ── */
-      .socials { flex-direction: column; padding: 48px 20px; gap: 32px; min-height: auto; }
+      .socials { flex-direction: column; padding: 40px 20px; gap: 28px; }
       .socials > .socialText { width: 100%; max-width: 100%; }
       .socials > .socialImage { width: 100%; }
       .socials > .socialImage > img:first-child { max-width: 100%; }
       .socials > .socialImage > img:nth-child(2),
-      .socials > .socialImage > img:nth-child(3) { max-width: 80px; }
+      .socials > .socialImage > img:nth-child(3) { max-width: 70px; }
       .socialText > h1 { font-size: clamp(1.4rem, 5vw, 1.8rem); }
-      .socialText > p { font-size: 0.88rem; }
+      .socialText > p { font-size: 0.92rem; max-width: 100%; }
       .specialKeys { flex-wrap: wrap; gap: 10px; }
       .btnPersonal, .btnBusiness, .btnEnterprise { padding: 8px 20px; font-size: 0.82rem; }
 
@@ -186,9 +186,9 @@ const GlobalStyles = () => (
       .bodyside_left > p { font-size: 0.78rem; }
 
       /* ── Original socials ── */
-      .socials { padding: 32px 14px; }
+      .socials { padding: 28px 14px; gap: 20px; }
       .socialText > h1 { font-size: clamp(1.2rem, 5vw, 1.5rem); }
-      .socialText > p { font-size: 0.8rem; }
+      .socialText > p { font-size: 0.85rem; }
       .specialKeys { gap: 8px; }
 
       /* ── Original services ── */
@@ -282,20 +282,20 @@ const GlobalStyles = () => (
     .scroll > img:nth-child(6) { max-width: 120px; }
     .scroll > img:nth-child(7) { max-width: 250px; }
     .socials {
-      width: 100%; min-height: 50vh;
+      width: 100%;
       display: flex; align-items: center; justify-content: center;
-      gap: 20px; padding: 120px 20px;
+      gap: 40px; padding: 80px 40px;
     }
-    .socials > .socialText { width: 50%; max-width: 600px; }
-    .socials > .socialImage { width: 50%; display: flex; align-items: center; justify-content: center; position: relative; }
+    .socials > .socialText { width: 45%; max-width: 540px; }
+    .socials > .socialImage { width: 45%; display: flex; align-items: center; justify-content: center; position: relative; }
     .socials > .socialImage > img { width: 100%; max-width: 800px; height: auto; }
     .socials > .socialImage > img:nth-child(2) {
-      width: 100%; max-width: 150px; position: absolute; top: 20%; left: 16%;
+      width: 100%; max-width: 120px; position: absolute; top: 20%; left: 16%;
       transform: rotate(19deg);
       animation: myAnimation 3s ease-in-out infinite;
     }
     .socials > .socialImage > img:nth-child(3) {
-      width: 100%; max-width: 150px; position: absolute; bottom: 20%; right: 16%;
+      width: 100%; max-width: 120px; position: absolute; bottom: 20%; right: 16%;
       transform: rotate(19deg);
       animation: myAnimation 3s ease-in-out infinite;
     }
@@ -304,10 +304,10 @@ const GlobalStyles = () => (
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
-    .socialText > h1 { font-size: clamp(2rem, 4vw, 3rem); color: #fff; line-height: 1.15; text-align: left; font-weight: 700; letter-spacing: -0.03em; }
+    .socialText > h1 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: #fff; line-height: 1.2; text-align: left; font-weight: 700; letter-spacing: -0.02em; }
     .socialText > h1 > span { color: rgb(255, 136, 0); }
-    .socialText > p { font-size: 1rem; line-height: 1.7; color: rgba(255,255,255,0.55); margin-top: 20px; }
-    .specialKeys { display: flex; gap: 20px; margin-top: 40px; }
+    .socialText > p { font-size: 1.05rem; line-height: 1.8; color: rgba(255,255,255,0.7); margin-top: 16px; max-width: 480px; }
+    .specialKeys { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
     .btnPersonal, .btnBusiness, .btnEnterprise {
       border: 1px solid #e8e2ff; padding: 10px 30px; border-radius: 20px;
     }
