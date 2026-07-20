@@ -301,12 +301,12 @@ const GlobalStyles = () => (
     .socials > .socialImage { width: 68%; display: flex; align-items: center; justify-content: center; position: relative; }
     .socials > .socialImage > img:first-child { width: 100%; max-width: 800px; height: auto; transform: scale(1.5); transform-origin: center; }
     .socials > .socialImage > img:nth-child(2) {
-      width: 100%; max-width: 120px; position: absolute; top: 20%; left: 16%;
+      width: 100%; max-width: 120px; position: absolute; top: 5%; left: 5%;
       transform: rotate(19deg);
       animation: myAnimation 3s ease-in-out infinite;
     }
     .socials > .socialImage > img:nth-child(3) {
-      width: 100%; max-width: 120px; position: absolute; bottom: 20%; right: 16%;
+      width: 100%; max-width: 120px; position: absolute; bottom: 5%; right: 5%;
       transform: rotate(19deg);
       animation: myAnimation 3s ease-in-out infinite;
     }
