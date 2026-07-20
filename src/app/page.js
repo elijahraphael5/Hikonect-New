@@ -148,7 +148,7 @@ const GlobalStyles = () => (
       .socials { flex-direction: column; padding: 40px 24px; gap: 28px; }
       .socials > .socialText { width: 100%; }
       .socials > .socialImage { width: 80%; max-width: 320px; margin: 0 auto; }
-      .socials > .socialImage > img:first-child { max-width: 100%; }
+      .socials > .socialImage > img:first-child { max-width: 100%; transform: none; }
       .socials > .socialImage > img:nth-child(2),
       .socials > .socialImage > img:nth-child(3) { max-width: 60px; }
       .socialText > h1 { font-size: clamp(1.4rem, 5vw, 1.8rem); }
@@ -299,7 +299,7 @@ const GlobalStyles = () => (
     }
     .socials > .socialText { width: 79%; max-width: 680px; }
     .socials > .socialImage { width: 68%; display: flex; align-items: center; justify-content: center; position: relative; }
-    .socials > .socialImage > img { width: 150%; max-width: none; height: auto; margin-left: -25%; flex-shrink: 0; }
+    .socials > .socialImage > img:first-child { width: 100%; max-width: 800px; height: auto; transform: scale(1.5); transform-origin: center; }
     .socials > .socialImage > img:nth-child(2) {
       width: 100%; max-width: 120px; position: absolute; top: 20%; left: 16%;
       transform: rotate(19deg);
