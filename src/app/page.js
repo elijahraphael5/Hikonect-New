@@ -138,10 +138,11 @@ const GlobalStyles = () => (
       .homepage_image > img { max-width: 100%; }
 
       /* ── Original scroll/gallery ── */
-      .scroll { gap: 16px; padding: 32px 16px; min-height: auto; }
-      .scroll > img { max-width: 60px; }
-      .scroll > img:nth-child(6) { max-width: 60px; }
-      .scroll > img:nth-child(7) { max-width: 80px; }
+      .scroll { padding: 40px 0; }
+      .scroll-track { gap: 24px; animation-duration: 20s; }
+      .scroll-track > img { max-width: 60px; }
+      .scroll-track > img:nth-child(7),
+      .scroll-track > img:nth-child(14) { max-width: 60px; }
 
       /* ── Original socials ── */
       .socials { flex-direction: column; padding: 40px 24px; gap: 28px; }
@@ -197,7 +198,8 @@ const GlobalStyles = () => (
       .card { height: 280px; gap: 8px; }
 
       /* ── Original scroll ── */
-      .scroll { gap: 10px; padding: 20px 12px; }
+      .scroll { padding: 24px 0; }
+      .scroll-track { gap: 16px; animation-duration: 15s; }
 
       /* ── New section overrides (reduce inline styles) ── */
       section[id]:not(#home) { padding: 48px 14px !important; }
@@ -275,13 +277,21 @@ const GlobalStyles = () => (
       text-align: center; color: rgba(255,255,255,0.55);
     }
     .scroll {
-      width: 100%; min-height: 30vh;
-      display: flex; align-items: center; justify-content: center;
-      padding: 80px 20px; gap: 54px;
+      width: 100%; overflow: hidden;
+      padding: 80px 0;
     }
-    .scroll > img { width: 100%; max-width: 150px; height: auto; mix-blend-mode: screen; }
-    .scroll > img:nth-child(6) { max-width: 120px; }
-    .scroll > img:nth-child(7) { max-width: 250px; }
+    .scroll-track {
+      display: flex; align-items: center; gap: 54px;
+      animation: scrollLoop 30s linear infinite;
+      width: max-content;
+    }
+    .scroll-track > img { width: 100%; max-width: 150px; height: auto; mix-blend-mode: screen; flex-shrink: 0; }
+    .scroll-track > img:nth-child(7) { max-width: 120px; }
+    .scroll-track > img:nth-child(14) { max-width: 120px; }
+    @keyframes scrollLoop {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
     .socials {
       width: 100%;
       display: flex; align-items: center; justify-content: center;
@@ -1021,13 +1031,22 @@ export default function HiKonnect() {
           </div>
 
           <div className='scroll'>
-            <img src='./pngwing.com.png' alt='' />
-            <img src='./pngegg.png' alt='' />
-            <img src='./icons8-disney-logo.svg' alt='' />
-            <img src='./icons8-hulu.svg' alt='' />
-            <img src='./youtube.png' alt='' />
-            <img src='./apple-tv-logo-svg-vector.svg' alt='' />
-            <img src='/svgviewer-png-output(2).png' alt='' />
+            <div className='scroll-track'>
+              <img src='./pngwing.com.png' alt='' />
+              <img src='./pngegg.png' alt='' />
+              <img src='./icons8-disney-logo.svg' alt='' />
+              <img src='./icons8-hulu.svg' alt='' />
+              <img src='./youtube.png' alt='' />
+              <img src='./apple-tv-logo-svg-vector.svg' alt='' />
+              <img src='/svgviewer-png-output(2).png' alt='' />
+              <img src='./pngwing.com.png' alt='' />
+              <img src='./pngegg.png' alt='' />
+              <img src='./icons8-disney-logo.svg' alt='' />
+              <img src='./icons8-hulu.svg' alt='' />
+              <img src='./youtube.png' alt='' />
+              <img src='./apple-tv-logo-svg-vector.svg' alt='' />
+              <img src='/svgviewer-png-output(2).png' alt='' />
+            </div>
           </div>
 
           <div className='servicesSection'>
