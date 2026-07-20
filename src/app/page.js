@@ -144,17 +144,14 @@ const GlobalStyles = () => (
       .scroll > img:nth-child(7) { max-width: 80px; }
 
       /* ── Original socials ── */
-      .socials { flex-direction: column; padding: 40px 20px; gap: 28px; }
-      .socials > .socialText { width: 100%; max-width: 80%; margin: 0 auto; text-align: center; }
-      .socialText > h1 { text-align: center; }
-      .socialText > p { text-align: center; margin-left: auto; margin-right: auto; }
+      .socials { flex-direction: column; padding: 40px 24px; gap: 28px; }
+      .socials > .socialText { width: 100%; }
       .socials > .socialImage { width: 80%; max-width: 320px; margin: 0 auto; }
       .socials > .socialImage > img:first-child { max-width: 100%; }
       .socials > .socialImage > img:nth-child(2),
       .socials > .socialImage > img:nth-child(3) { display: none; }
       .socialText > h1 { font-size: clamp(1.4rem, 5vw, 1.8rem); }
       .socialText > p { font-size: 0.92rem; max-width: 100%; }
-      .specialKeys { justify-content: center; }
       .specialKeys { flex-wrap: wrap; gap: 10px; }
       .btnPersonal, .btnBusiness, .btnEnterprise { padding: 8px 20px; font-size: 0.82rem; }
 
@@ -189,9 +186,8 @@ const GlobalStyles = () => (
       .bodyside_left > p { font-size: 0.78rem; }
 
       /* ── Original socials ── */
-      .socials { padding: 28px 14px; gap: 20px; }
+      .socials { padding: 28px 16px; gap: 20px; }
       .socials > .socialImage { width: 90%; max-width: 200px; }
-      .socials > .socialText { max-width: 90%; }
       .socialText > h1 { font-size: clamp(1.2rem, 5vw, 1.5rem); }
       .socialText > p { font-size: 0.85rem; }
       .specialKeys { gap: 8px; }
